@@ -112,7 +112,7 @@ firetext.init = function () {
   firetext.user.id.init();
   
   // Add event listeners
-  toolbar.addEventListener(
+  tolbar.addEventListener(
     'mousedown', function mouseDown(event) {
       event.preventDefault();
       event.target.classList.toggle('active');
@@ -424,6 +424,8 @@ function cleanForPreview(text, documentType) {
     case ".docx":
       console.warn("cleanForPreview docx not implemented text = %s.", text);
       return text;
+    case ".pdf":
+      return text;
   }
 }
 
@@ -441,6 +443,9 @@ function buildDocListItems(DOCS, listElms, description, output, location, previe
     case ".txt":
       description = firetext.parsers.plain.parse(cleanForPreview(description, DOCS[0][2]), "HTML");
       break;
+    case ".pdf":
+      description = firetext.parsers.pdf.parse(cleanForPreview());
+      return text;
     case ".docx":
       var tmp = document.createElement("DIV");
       tmp.appendChild(description.HTMLout());
