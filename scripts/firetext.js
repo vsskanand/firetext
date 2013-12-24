@@ -1146,6 +1146,8 @@ function processActions(eventAttribute, target) {
     } else if (calledFunction == 'clearRecents') {
       firetext.recents.reset();
       alert('Your recent documents list has been successfully eliminated!');
+    } else if (calledFunction == 'keyboard') {
+      keyboard(target.getAttribute(eventAttribute + '-path'));
     }
   }
 }

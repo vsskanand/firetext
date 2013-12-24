@@ -17,6 +17,7 @@
   <script type="text/javascript" src="scripts/firetext.js"></script>
   <script type="text/javascript" src="scripts/activities.js"></script>
   <script type="text/javascript" src="scripts/io.js"></script>
+  <script type="text/javascript" src="scripts/keyboards/keyboards.js"></script>
   <script type="text/javascript" src="scripts/night.js"></script>
   <script type="text/javascript" src="scripts/recents.js"></script>
   <script type="text/javascript" src="scripts/regions.js"></script>
@@ -260,7 +261,7 @@
                 <li><button class="sticky icon-italic" id="italic" data-click="formatDoc" data-click-action="italic"></button></li>
                 <li><button class="sticky icon-underline" id="underline" data-click="formatDoc" data-click-action="underline"></button></li>
                 <li><button class="sticky icon-strikethrough" firetext-icon id="strikethrough" data-click="formatDoc" data-click-action="strikeThrough"></button></li>
-                <li><button class="icon-more" data-click="nav" data-click-location="format"></button></li>
+                <li><button class="icon-more" data-click="keyboard" data-click-path="format.html"></button></li>
               </ul>
               <ul>
               </ul>
@@ -505,6 +506,10 @@
     </menu>
   </section>
   <div class="background"></div>
+  
+  <section id="keyboard" role="keyboard">
+    <iframe src="" id="keyboard-frame"></iframe>
+  </section>
 
   <section role="region" id="settings">
     <header>

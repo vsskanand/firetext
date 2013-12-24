@@ -6,11 +6,11 @@
 /* Font */
 @font-face {
 	font-family: 'Firetext';
-	src:url('fonts/Firetext.eot');
-	src:url('fonts/Firetext.eot?#iefix') format('embedded-opentype'),
-		url('fonts/Firetext.ttf') format('truetype'),
-		url('fonts/Firetext.woff') format('woff'),
-		url('fonts/Firetext.svg#Firetext') format('svg');
+	src:url(fonts/Firetext.eot);
+	src:url(fonts/Firetext.eot?#iefix) format('embedded-opentype'),
+		url(fonts/Firetext.ttf) format('truetype'),
+		url(fonts/Firetext.woff) format('woff'),
+		url(fonts/Firetext.svg#Firetext) format('svg');
 	font-weight: normal;
 	font-style: normal;
 }

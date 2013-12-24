@@ -1,0 +1,93 @@
+/*
+* Keyboards
+* Copyright (C) Codexa Organization 2013.
+*/
+
+
+/* Basic style */
+body, html {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-size: 10px;
+}
+
+.keyboard {
+    background-color: #606b6e;
+    color: #fff;
+}
+
+.keyboard ul {
+    height: 25%;
+    display: block;
+    list-style: none;
+    margin: 0;
+       -moz-box-sizing: border-box;
+       -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    text-align: center;
+}
+
+.keyboard ul:nth-child(1) {
+    background-color: #606b6e;
+}
+
+.keyboard ul:nth-child(2) {
+    background-color: #5b6668;
+}
+
+.keyboard ul:nth-child(3) {
+    background-color: #566061;
+}
+
+.keyboard ul:nth-child(4) {
+    background-color: #525c5e;
+}
+
+
+/* Buttons/Inputs */
+.keyboard ul li {
+    display: inline-block;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.keyboard ul:nth-child(1) li + li {
+    border-left: .1rem solid #525b5e;
+}
+
+.keyboard ul:nth-child(2) li + li {
+    border-left: .1rem solid #4c5657;
+}
+
+.keyboard ul:nth-child(3) li + li {
+    border-left: .1rem solid #475052;
+}
+
+.keyboard ul:nth-child(4) li + li {
+    border-left: .1rem solid #434b4d;
+}
+
+.keyboard ul li input,
+.keyboard ul li button,
+.keyboard ul li .button {
+    background-color: transparent;   
+    border: none;
+    height: 100%;
+    font-size: 3rem;
+    text-align: center;
+    color: inherit;
+    min-width: 5rem;
+    padding: 0 0 .3rem .5rem;
+       -moz-box-sizing: border-box;
+       -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.keyboard ul li:active,
+.keyboard ul li.active  {
+    color: #00caf2;
+}
