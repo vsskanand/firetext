@@ -13,41 +13,6 @@
 
   <title>Firetext</title>
 
-  <!-- Scripts -->
-  <script type="text/javascript" src="scripts/firetext.js"></script>
-  <script type="text/javascript" src="scripts/activities.js"></script>
-  <script type="text/javascript" src="scripts/io.js"></script>
-  <script type="text/javascript" src="scripts/night.js"></script>
-  <script type="text/javascript" src="scripts/recents.js"></script>
-  <script type="text/javascript" src="scripts/regions.js"></script>
-  <script type="text/javascript" src="scripts/settings.js"></script>
-
-  <!-- Cloud -->
-  <script type="text/javascript" src="scripts/cloud/cloud.js"></script>
-  <script type="text/javascript" src="scripts/cloud/dropbox.min.js"></script>
-  <script type="text/javascript" src="scripts/cloud/dropbox.js"></script>
-  
-  <!-- Lib -->
-  <script type="text/javascript" src="scripts/lib/encrypt.js"></script>
-  <script type="text/javascript" src="scripts/lib/FileSaver.js"></script>
-  <script type="text/javascript" src="scripts/lib/gesture_detector.js"></script>
-  <script type="text/javascript" src="scripts/lib/jszip.js"></script>
-  <script type="text/javascript" src="scripts/lib/jszip-deflate.js"></script>
-  <script type="text/javascript" src="scripts/lib/jszip-inflate.js"></script>
-  <script type="text/javascript" src="scripts/lib/jszip-load.js"></script>
-  <script type="text/javascript" src="scripts/lib/prettify.js"></script>
-  <script type="text/javascript" src="scripts/lib/lang-css.js"></script>
-  <script type="text/javascript" src="scripts/lib/lang-wiki.js"></script>
-  <script type="text/javascript" src="scripts/lib/stringview.js"></script>
-  <script type="text/javascript" src="scripts/lib/bugsense.js"></script>
-
-  <!-- Parsers -->
-  <script type="text/javascript" src="scripts/parsers/base64.js"></script>
-  <script type="text/javascript" src="scripts/parsers/plain-text.js"></script>
-
-  <!-- User -->
-  <script type="text/javascript" src="scripts/user/id.js"></script>
-
   <!-- Building Blocks -->
   <link rel="stylesheet" type="text/css" href="style/bb/action_menu.css"/>
   <link rel="stylesheet" type="text/css" href="style/bb/buttons.css"/>
@@ -71,6 +36,44 @@
   <link rel="stylesheet" type="text/css" href="style/desktop.css"/>
   <link rel="stylesheet" type="text/css" href="style/prettify.css"/>
   <link rel="stylesheet" type="text/css" href="style/night.css" />
+
+  <!-- Scripts -->
+  <script type="text/javascript" src="scripts/firetext.js"></script>
+  <script type="text/javascript" src="scripts/activities.js"></script>
+  <script type="text/javascript" src="scripts/io.js"></script>
+  <script type="text/javascript" src="scripts/night.js"></script>
+  <script type="text/javascript" src="scripts/recents.js"></script>
+  <script type="text/javascript" src="scripts/regions.js"></script>
+  <script type="text/javascript" src="scripts/search.js"></script>
+  <script type="text/javascript" src="scripts/settings.js"></script>
+
+  <!-- Cloud -->
+  <script type="text/javascript" src="scripts/cloud/cloud.js"></script>
+  <script type="text/javascript" src="scripts/cloud/dropbox.min.js"></script>
+  <script type="text/javascript" src="scripts/cloud/dropbox.js"></script>
+  
+  <!-- Lib -->
+  <script type="text/javascript" src="scripts/lib/bugsense.js"></script>
+  <script type="text/javascript" src="scripts/lib/encrypt.js"></script>
+  <script type="text/javascript" src="scripts/lib/FileSaver.js"></script>
+  <script type="text/javascript" src="scripts/lib/gesture_detector.js"></script>
+  <script type="text/javascript" src="scripts/lib/jszip.js"></script>
+  <script type="text/javascript" src="scripts/lib/jszip-deflate.js"></script>
+  <script type="text/javascript" src="scripts/lib/jszip-inflate.js"></script>
+  <script type="text/javascript" src="scripts/lib/jszip-load.js"></script>
+  <script type="text/javascript" src="scripts/lib/list.fuzzysearch.min.js"></script>
+  <script type="text/javascript" src="scripts/lib/list.js"></script>
+  <script type="text/javascript" src="scripts/lib/prettify.js"></script>
+  <script type="text/javascript" src="scripts/lib/lang-css.js"></script>
+  <script type="text/javascript" src="scripts/lib/lang-wiki.js"></script>
+  <script type="text/javascript" src="scripts/lib/stringview.js"></script>
+
+  <!-- Parsers -->
+  <script type="text/javascript" src="scripts/parsers/base64.js"></script>
+  <script type="text/javascript" src="scripts/parsers/plain-text.js"></script>
+
+  <!-- User -->
+  <script type="text/javascript" src="scripts/user/id.js"></script>
 </head>
 
 <body role="application">
@@ -117,20 +120,25 @@
       <h1 class="firetext icon-">firetext</h1>
     </header>
     <div role="main" class="header-only">
-      <article data-type="list" class="docsList" id="welcome-docs-list">
-        <div id="welcome-recents-area">
-          <h2>Recent Documents</h2>
-          <ul id="welcome-recents-list"></ul>
+      <div>
+        <div id="welcome-search-hook" class="hook">
+          <input type="search" id="welcome-search-box" placeholder="Search" data-input="search" />
         </div>
-        <div id="welcome-device-area">
-          <h2>Documents on Device</h2>
-          <ul id="welcome-device-list"></ul>
-        </div>
-        <div id="welcome-dropbox-area">
-          <h2>Documents on Dropbox</h2>
-          <ul id="welcome-dropbox-list"></ul>
-        </div>
-      </article>
+        <article data-type="list" class="docsList" id="welcome-docs-list">
+          <div id="welcome-recents-area">
+            <h2>Recent Documents</h2>
+            <ul id="welcome-recents-list" class="list"></ul>
+          </div>
+          <div id="welcome-device-area">
+            <h2>Documents on Device</h2>
+            <ul id="welcome-device-list" class="list"></ul>
+          </div>
+          <div id="welcome-dropbox-area">
+            <h2>Documents on Dropbox</h2>
+            <ul id="welcome-dropbox-list" class="list"></ul>
+          </div>
+        </article>
+      </div>
     </div>
   </section>
   
@@ -274,7 +282,7 @@
           </div>
         </li>
         <div class="tabToolbar">
-          <button data-click="sidebar" data-click-id="main" class="icon-menu"></button>
+          <button data-click="sidebar" data-click-id="main" class="icon-menu drawerEnabled"></button>
           <button data-click="closeFile" class="icon-close"></button>
           <button data-click="fullscreen" class="icon-efs"></button>
           <button data-click="saveFromEditor" id="zenSaveButton" class="icon-save"></button>
