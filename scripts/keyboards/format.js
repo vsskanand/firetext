@@ -30,7 +30,7 @@ window.onload= function(){
 				chs[i] = chs[i].classList.remove("active");
 				chs[i] = chs[i].classList.add("hidden");
 			}
-			var li = document.getElementsByClassName("arrow").parentNode;
+			var li = document.getElementsByClassName("arrow")[0].parentNode;
 			ul.removeChild(li);
 		}
 	}
