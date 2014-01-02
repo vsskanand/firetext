@@ -68,8 +68,12 @@ body, html {
 }
 
 select {
-    border: none;
+    border: 1px solid #ccc;
     background: #eee;
+    padding: 3px;
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
 }
 
 .keyboard ul li input,
