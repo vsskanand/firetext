@@ -178,6 +178,15 @@
   content: "\e619";
 }
 
+.icon-highlight {
+	background: url(icons/misc/highlight.svg) no-repeat !important;
+	background-size: 100% !important;
+}
+.icon-fontcolor {
+	background: url(icons/misc/fontcolor.svg) no-repeat !important;
+	background-size: 100% !important;
+}
+
 [data-icon="analytics"] {
   background-image: url(icons/editor/fireanalytics.svg);
   background-size: 2.4rem;

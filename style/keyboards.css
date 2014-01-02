@@ -53,13 +53,6 @@ body, html {
     padding:0px;
 }
 
-.align>li button {
-    position: relative;
-    visibility: visible;
-    float:left;
-    padding:0px;
-}
-
 .arrow {
     height:100%;
 }
@@ -69,11 +62,23 @@ body, html {
     background: #ccc !important;
     min-width: 4rem !important;
 }
+.align {
+    overflow: auto;
+    display: inline;
+}
+
+select {
+    border: none;
+    background: #eee;
+}
 
 .keyboard ul li input,
 .keyboard ul li button,
+.keyboard ul li fieldset,
 .keyboard ul li .button {
     background: none;
+    position: relative;
+    float: left;
     border: none;
     height: 100%;
     font-size: 3rem;
