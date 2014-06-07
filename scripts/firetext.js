@@ -96,9 +96,6 @@ firetext.init = function () {
 	// Initalize recent docs
 	firetext.recents.init();
 	
-	// Navigate to welcome
-	regions.nav('welcome');
-	
 	// Initialize the editor
 	initEditor(function() {
 		// Initialize Settings
@@ -173,6 +170,9 @@ firetext.init = function () {
 			// Dispatch init event
 			window.dispatchEvent(firetext.initialized);
 			firetext.isInitialized = true;
+	
+			// Navigate to welcome
+			regions.nav('welcome');
 		});
 		
 		// Initialize Night Mode

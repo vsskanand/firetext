@@ -1,13 +1,14 @@
 @media (min-width: 767px) {
   /* Regions */
   section[role="dialog"], form[role="dialog"] {
+    border: 1px solid #dfdfdf;
+    box-shadow: 0 0 10px #efefef;
     width: auto;
     height: auto;
     top: 20%;
     left: 20%;
     right: 20%;
     bottom: 20%;
-    box-shadow: 0 0 20px black;
       -webkit-transform: translateY(150%);
       -moz-transform: translateY(150%);
       -o-transform: translateY(150%);
@@ -25,7 +26,7 @@
     bottom: 0;
     display: block;
     position: fixed;
-    background: rgba(0,0,0,.5);
+    background: rgba(255,255,255,0.7);
     content: "";
     opacity: 0;
     visibility: hidden;
@@ -36,9 +37,7 @@
     transition: opacity .4s, visibility .4s 0s;
   }
   section[role="dialog"].current + .background,
-  section[role="dialog"].parent + .background,
-  form[role="dialog"].current + .background,
-  form[role="dialog"].parent + .background {
+  form[role="dialog"].current + .background {
     opacity: 1;
     visibility: visible;
       -moz-transition: opacity .4s, visibility 0s;

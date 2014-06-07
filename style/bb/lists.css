@@ -65,7 +65,7 @@
 
 [data-type="list"] li > a:after {
   content: "";
-  background-color: #dfdfdf;
+  background-color: #efefef;
   opacity: 0;
   pointer-events: none;
   position: absolute;

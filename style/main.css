@@ -37,6 +37,11 @@ html, body {
   margin: 1rem;
 }
 
+li .icon-arrow {
+  font-size: 1.7rem;
+  color: #aaa;
+}
+
 
 /* Fonts */
 @font-face {
@@ -182,11 +187,6 @@ form[role=dialog].current {
   padding: 0;
   position: relative;
   top: -.4rem;
-}
-
-[data-type="list"] li.fileListItem .icon-arrow {
-  font-size: 1.7rem;
-  color: #aaa;
 }
 
 
