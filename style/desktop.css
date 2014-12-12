@@ -136,8 +136,9 @@ section[data-type="sidebar"] > nav:after {
 
 section[data-type="sidebar"] > nav > h2 {
   background-color: transparent;
-  padding: 0 20px;
-  text-indent: 0;	  
+  text-indent: 0;
+  font-size: 1.8rem;
+  padding: 0.5rem 2rem;
 }
 
 section[data-type="sidebar"] > nav > ul > li:active {
@@ -145,7 +146,9 @@ section[data-type="sidebar"] > nav > ul > li:active {
 }
 
 section[data-type="sidebar"] > nav > ul > li > a {
-  padding: 0 20px;
+  font-size: 1.8rem;
+  line-height: 4rem;
+  padding: 0.5rem 2rem;
   text-indent: 0;
 }
 
@@ -178,7 +181,7 @@ section[data-type="sidebar"] [role="toolbar"] button.active {
     -moz-transform: translateX(0) !important;
     -webkit-transform: translateX(0) !important;
     -o-transform: translateX(0) !important;
-    -ms-transform: translateX(0) !important;  
+    -ms-transform: translateX(0) !important;    
   transform: translateX(0) !important;   
 }
 
