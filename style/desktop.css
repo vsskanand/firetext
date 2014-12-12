@@ -183,11 +183,26 @@ section[data-type="sidebar"] [role="toolbar"] button.active {
   top: 4rem;
   right: 0;
 }
-  
+
 .fullscreen #edit-bar .icon-more {
     -moz-transform: rotate(0.5turn);
     -webkit-transform: rotate(0.5turn);
     -o-transform: rotate(0.5turn);
     -ms-transform: rotate(0.5turn);
   transform: rotate(0.5turn);
+}
+
+/* Editor */
+#edit header:first-child {
+  border-bottom: none;
+}
+
+#fileName {
+  display: inline-block;
+}
+
+#edit-bar {
+  top: 0;
+  background-color: #fafafa;
+  border-bottom: 2px solid #efefef;
 }
