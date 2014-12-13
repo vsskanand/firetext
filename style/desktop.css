@@ -3,6 +3,25 @@ html {
 }
 
 /* Regions */
+section[role="region"] {
+  opacity: 0;
+    -moz-transform: none !important;
+    -webkit-transform: none !important;
+    -o-transform: none !important; 
+    -ms-transform: none !important; 
+  transform: none !important;
+    -moz-transition-duration: 0.2s;
+    -webkit-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+
+section[role="region"].current,
+[role="region"].parent,
+[role="dialog"].parent {
+  opacity: 1;
+}
+
 section[role="dialog"],
 form[role="dialog"] {
   width: auto;
@@ -10,7 +29,7 @@ form[role="dialog"] {
   top: 20%;
   left: 20%;
   right: 20%;
-  bottom: 20%;  
+  bottom: 20%;    
   border: 1px solid #dfdfdf;
   box-shadow: 0 0 10px #efefef;
     -webkit-transform: translateY(150%);
@@ -52,15 +71,25 @@ form[role="dialog"].parent + .background {
     -ms-transition: opacity .4s, visibility 0s;
   transition: opacity .4s, visibility 0s;
 }
-  
+
 /* Tabs */
-[role="tablist"] > [role="tab"] {
-  width: auto !important;
+.current [role="tabs"] [role="tab"],
+.parent [role="tabs"] [role="tab"],
+.active [role="tabs"] [role="tab"] {
+    -moz-transform: none;
+    -webkit-transform: none;
+    -o-transform: none;
+    -ms-transform: none;
+  transform: none;
+  opacity: 0;
+    -moz-transition-duration: 0.2s;
+    -webkit-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
 }
 
-[role="tablist"] > [role="tab"] > a {
-  padding: 0 15px;
-  width: auto;
+[role="tabs"] [role="tab"].selected-tab {
+  opacity: 1;
 }
   
 /* Drawer/Sidebar */
