@@ -7,7 +7,7 @@ html {
 
 body {
   padding: 0;
-  margin: 0;
+  margin: 0 0 60px;
   background-color: #ffffff;
 }
 
@@ -69,6 +69,7 @@ body:after {
   body {        
     border: 1px solid #ddd;
     box-shadow: 0 0 5px #ddd;
+    margin-bottom: 0;
   }
   
   body:before,
