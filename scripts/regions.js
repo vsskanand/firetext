@@ -163,15 +163,6 @@ regions.tab = function (list, name) {
 		if (name == 'raw') {
 			prettyPrint();
 		}
-		if (name == 'design') {
-			document.getElementById('tab-'+name).querySelector('[role="tabpanel"]').addEventListener('transitionend', function onTransitionEnd() {
-				this.removeEventListener('transitionend', onTransitionEnd);
-				document.getElementById('edit-bar').style.position = 'absolute';
-				setTimeout(function() {
-					document.getElementById('edit-bar').style.position = 'fixed';
-				});
-			});
-		}
 		/* End of customized section */
 	}
 };
