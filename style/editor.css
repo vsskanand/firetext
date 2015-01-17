@@ -44,19 +44,14 @@
 /* Header */
 #fileName {
   text-align: left;
-  display: none;
 }
 
-#edit header:first-child .tabBar {
-  display: inline-block;
-  height: 100%;
+.edit-header .tabBar {
   vertical-align: top;
 }
 
-#edit header:first-child .tabBar > div {
-  font-size: 2rem;
-  text-decoration: none;
-  line-height: 5rem;
+.edit-header .tabBar > div {
+  text-decoration: none
   color: #737373;
     -moz-transition: all .5s;
     -webkit-transition: all .5s;
@@ -66,14 +61,10 @@
   display: inline-block;
   margin: 0 7px;
   border-bottom: 2px solid transparent;
-  max-width: 60px;
-  overflow: hidden;
-  text-overflow: ellipsis;
   height: 100%;
-  white-space: nowrap;
 }
 
-#edit header:first-child .tabBar > div.selected-tab-button {
+.edit-header .tabBar > div.selected-tab-button {
   border-color: #737373;
   color: #1f1f1f;
 }

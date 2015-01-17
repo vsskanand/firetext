@@ -1,0 +1,40 @@
+/* Editor */
+#edit .edit-header {
+  height: 4rem;
+}
+
+#edit .edit-header button {
+  min-width: 4rem;
+  height: 4rem;
+}
+
+#edit .edit-header [class*=" icon-"] {
+  width: 2.2rem;
+  font-size: 2.2rem;
+  padding-top: 1rem;
+}
+
+#edit .edit-header .icon-close {
+  font-size: 1.2rem !important;
+  padding-top: 1.5rem;
+}
+
+#fileName {
+  display: none;
+}
+
+.edit-header .tabBar {
+  display: block;
+  white-space: nowrap;
+  overflow-x: auto;
+  text-align: center;
+}
+
+.edit-header .tabBar > div {
+  font-size: 1.6rem;;
+  line-height: 4rem;
+}
+
+.editor-container {
+  height: calc(100% - 4.2rem);
+}

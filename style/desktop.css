@@ -247,22 +247,23 @@ section[data-type="sidebar"] [role="toolbar"] button.active {
 }
 
 /* Editor */
-#edit header:first-child {
-  border-bottom: none;
-}
-
 #fileName {
   display: inline-block;
+}
+
+.edit-header .tabBar {
+  display: inline-block;
+}
+
+.edit-header .tabBar > div {
+  font-size: 2rem;
+  line-height: 5rem;
 }
 
 #edit-bar {
   top: 0;
   background-color: #fafafa;
   border-bottom: 2px solid #efefef;
-}
-
-#edit header:first-child .tabBar > div {
-  max-width: none; 
 }
 
 .icon-more {
