@@ -5,11 +5,6 @@ html {
 /* Regions */
 section[role="region"] {
   opacity: 0;
-    -moz-transform: none !important;
-    -webkit-transform: none !important;
-    -o-transform: none !important; 
-    -ms-transform: none !important; 
-  transform: none !important;
     -moz-transition-duration: 0.2s;
     -webkit-transition-duration: 0.2s;
     -o-transition-duration: 0.2s;
@@ -73,14 +68,7 @@ form[role="dialog"].parent + .background {
 }
 
 /* Tabs */
-.current [role="tabs"] [role="tab"],
-.parent [role="tabs"] [role="tab"],
-.active [role="tabs"] [role="tab"] {
-    -moz-transform: none;
-    -webkit-transform: none;
-    -o-transform: none;
-    -ms-transform: none;
-  transform: none;
+[role="tabs"] [role="tab"] {
   opacity: 0;
     -moz-transition-duration: 0.2s;
     -webkit-transition-duration: 0.2s;
