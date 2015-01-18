@@ -1,199 +1,199 @@
 /* Regions */
 section[role="region"] {
-    -moz-transform: translateX(-100%);
-    -webkit-transform: translateX(-100%);
-    -o-transform: translateX(-100%); 
-    -ms-transform: translateX(-100%); 
-  transform: translateX(-100%);
+		-moz-transform: translateX(-100%);
+		-webkit-transform: translateX(-100%);
+		-o-transform: translateX(-100%); 
+		-ms-transform: translateX(-100%); 
+	transform: translateX(-100%);
 }
 
 section[role="region"].current,
 [role="region"].parent,
 [role="dialog"].parent {
-    -moz-transform: none;
-    -webkit-transform: none;
-    -o-transform: none;
-    -ms-transform: none; 
-  transform: none;
+		-moz-transform: none;
+		-webkit-transform: none;
+		-o-transform: none;
+		-ms-transform: none; 
+	transform: none;
 }
 
-section[role="region"].current ~ section[role="region"] {  
-    -moz-transform: translateX(100%);
-    -webkit-transform: translateX(100%);
-    -o-transform: translateX(100%);
-    -ms-transform: translateX(100%);
-  transform: translateX(100%);
+section[role="region"].current ~ section[role="region"] {	 
+		-moz-transform: translateX(100%);
+		-webkit-transform: translateX(100%);
+		-o-transform: translateX(100%);
+		-ms-transform: translateX(100%);
+	transform: translateX(100%);
 }
 
 [dir="rtl"] section[role="region"] {
-    -moz-transform: translateX(100%);
-    -webkit-transform: translateX(100%);
-    -o-transform: translateX(100%); 
-    -ms-transform: translateX(100%); 
-  transform: translateX(100%);
+		-moz-transform: translateX(100%);
+		-webkit-transform: translateX(100%);
+		-o-transform: translateX(100%); 
+		-ms-transform: translateX(100%); 
+	transform: translateX(100%);
 }
 
 [dir="rtl"] section[role="region"].current,
 [dir="rtl"] [role="region"].parent {
-    -moz-transform: none;
-    -webkit-transform: none;
-    -o-transform: none;
-    -ms-transform: none; 
-  transform: none;
+		-moz-transform: none;
+		-webkit-transform: none;
+		-o-transform: none;
+		-ms-transform: none; 
+	transform: none;
 }
 
-[dir="rtl"] section[role="region"].current ~ section[role="region"] {  
-    -moz-transform: translateX(-100%);
-    -webkit-transform: translateX(-100%);
-    -o-transform: translateX(-100%);
-    -ms-transform: translateX(-100%);
-  transform: translateX(-100%);
+[dir="rtl"] section[role="region"].current ~ section[role="region"] {	 
+		-moz-transform: translateX(-100%);
+		-webkit-transform: translateX(-100%);
+		-o-transform: translateX(-100%);
+		-ms-transform: translateX(-100%);
+	transform: translateX(-100%);
 }
 
 /* Dialogs */
 section[role="dialog"] + .background {
-  display: none;
+	display: none;
 }
 
 /* Sidebars */
 [data-type="sidebar"] {
-    -moz-transition: .4s visibility 0s;
-    -webkit-transition: .4s visibility 0s;
-    -o-transition: 4s visibility 0s;
-  transition: .4s visibility 0s;
+		-moz-transition: .4s visibility 0s;
+		-webkit-transition: .4s visibility 0s;
+		-o-transition: 4s visibility 0s;
+	transition: .4s visibility 0s;
 }
 
 [data-type="sidebar"].active {
-    -moz-transition: 0s visibility 0s;
-    -webkit-transition: 0s visibility 0s;
-    -o-transition: 0s visibility 0s;
-  transition: 0s visibility 0s;
+		-moz-transition: 0s visibility 0s;
+		-webkit-transition: 0s visibility 0s;
+		-o-transition: 0s visibility 0s;
+	transition: 0s visibility 0s;
 }
 
 [data-state="drawer"].current {
-    -moz-transform: translateX(80%) !important;
-    -webkit-transform: translateX(80%) !important;
-    -o-transform: translateX(80%) !important;
-    -ms-transform: translateX(80%) !important;
-  transform: translateX(80%) !important;
+		-moz-transform: translateX(80%) !important;
+		-webkit-transform: translateX(80%) !important;
+		-o-transform: translateX(80%) !important;
+		-ms-transform: translateX(80%) !important;
+	transform: translateX(80%) !important;
 }
 
 [dir="rtl"] [data-state="drawer"].current {
-    -moz-transform: translateX(-80%) !important;
-    -webkit-transform: translateX(-80%) !important;
-    -o-transform: translateX(-80%) !important;
-    -ms-transform: translateX(-80%) !important;
-  transform: translateX(-80%) !important;
+		-moz-transform: translateX(-80%) !important;
+		-webkit-transform: translateX(-80%) !important;
+		-o-transform: translateX(-80%) !important;
+		-ms-transform: translateX(-80%) !important;
+	transform: translateX(-80%) !important;
 }
 
 [data-state="drawer"].current > *:not(.drawerEnabled) {
-  pointer-events: none;   
+	pointer-events: none;		
 }
 
 [data-state="drawer"].current .drawerEnabled {
-  pointer-events: all;
+	pointer-events: all;
 }
 
 [data-state="drawer"][data-position="right"].current {
-    -moz-transform: translateX(-80%) !important;
-    -webkit-transform: translateX(-80%) !important;
-    -o-transform: translateX(-80%) !important;
-    -ms-transform: translateX(-80%) !important;
-  transform: translateX(-80%) !important;
+		-moz-transform: translateX(-80%) !important;
+		-webkit-transform: translateX(-80%) !important;
+		-o-transform: translateX(-80%) !important;
+		-ms-transform: translateX(-80%) !important;
+	transform: translateX(-80%) !important;
 }
 
 [dir="rtl"] [data-state="drawer"][data-position="right"].current {
-    -moz-transform: translateX(80%) !important;
-    -webkit-transform: translateX(80%) !important;
-    -o-transform: translateX(80%) !important;
-    -ms-transform: translateX(80%) !important;
-  transform: translateX(80%) !important;
+		-moz-transform: translateX(80%) !important;
+		-webkit-transform: translateX(80%) !important;
+		-o-transform: translateX(80%) !important;
+		-ms-transform: translateX(80%) !important;
+	transform: translateX(80%) !important;
 }
 
 /* Tabs */
 .current [role="tabs"] [role="tab"],
 .parent [role="tabs"] [role="tab"],
 .active [role="tabs"] [role="tab"] {
-    -moz-transform: translateX(-100%);
-    -webkit-transform: translateX(-100%);
-    -o-transform: translateX(-100%);
-    -ms-transform: translateX(-100%);
-  transform: translateX(-100%);
+		-moz-transform: translateX(-100%);
+		-webkit-transform: translateX(-100%);
+		-o-transform: translateX(-100%);
+		-ms-transform: translateX(-100%);
+	transform: translateX(-100%);
 }
 
 [dir="rtl"] .current [role="tabs"] [role="tab"],
 [dir="rtl"] .parent [role="tabs"] [role="tab"],
 [dir="rtl"] .active [role="tabs"] [role="tab"] {
-    -moz-transform: translateX(102%);
-    -webkit-transform: translateX(102%);
-    -o-transform: translateX(102%);
-    -ms-transform: translateX(102%);
-  transform: translateX(102%);
+		-moz-transform: translateX(102%);
+		-webkit-transform: translateX(102%);
+		-o-transform: translateX(102%);
+		-ms-transform: translateX(102%);
+	transform: translateX(102%);
 }
 
 .current [role="tabs"] [role="tab"].selected-tab,
 .parent [role="tabs"] [role="tab"].selected-tab,
 .active [role="tabs"] [role="tab"].selected-tab {
-    -moz-transform: none;
-    -webkit-transform: none;
-    -o-transform: none;
-    -ms-transform: none;
-  transform: none;
+		-moz-transform: none;
+		-webkit-transform: none;
+		-o-transform: none;
+		-ms-transform: none;
+	transform: none;
 }
 
 [role="tabs"] .selected-tab ~ [role="tab"] {
-    -moz-transform: translateX(100%);
-    -webkit-transform: translateX(100%);
-    -o-transform: translateX(100%);
-    -ms-transform: translateX(100%);
-  transform: translateX(100%);
+		-moz-transform: translateX(100%);
+		-webkit-transform: translateX(100%);
+		-o-transform: translateX(100%);
+		-ms-transform: translateX(100%);
+	transform: translateX(100%);
 }
 
 [dir="rtl"] [role="tabs"] .selected-tab ~ [role="tab"] {
-    -moz-transform: translateX(-102%);
-    -webkit-transform: translateX(-102%);
-    -o-transform: translateX(-102%);
-    -ms-transform: translateX(-102%);
-  transform: translateX(-102%);
+		-moz-transform: translateX(-102%);
+		-webkit-transform: translateX(-102%);
+		-o-transform: translateX(-102%);
+		-ms-transform: translateX(-102%);
+	transform: translateX(-102%);
 }
 
 /* Editor */
 #edit .edit-header {
-  height: 4rem;
+	height: 4rem;
 }
 
 #edit .edit-header button {
-  min-width: 4rem;
-  height: 4rem;
+	min-width: 4rem;
+	height: 4rem;
 }
 
 #edit .edit-header [class*=" icon-"] {
-  width: 2.2rem;
-  font-size: 2.2rem;
-  padding-top: 1rem;
+	width: 2.2rem;
+	font-size: 2.2rem;
+	padding-top: 1rem;
 }
 
 #edit .edit-header .icon-close {
-  font-size: 1.2rem !important;
-  padding-top: 1.5rem;
+	font-size: 1.2rem !important;
+	padding-top: 1.5rem;
 }
 
 #fileName {
-  display: none;
+	display: none;
 }
 
 .edit-header .tabBar {
-  display: block;
-  white-space: nowrap;
-  overflow-x: auto;
-  text-align: center;
+	display: block;
+	white-space: nowrap;
+	overflow-x: auto;
+	text-align: center;
 }
 
 .edit-header .tabBar > div {
-  font-size: 1.6rem;;
-  line-height: 4rem;
+	font-size: 1.8rem;
+	line-height: 4rem;
 }
 
 .editor-container {
-  height: calc(100% - 4.2rem);
+	height: calc(100% - 4.2rem);
 }

@@ -85,7 +85,7 @@ var mainClosure = function() {
 
 			// initialize modules/register handlers
 			// night mode
-			initNight(doc, parentMessageProxy);
+			initNight(parentMessageProxy);
 			// editor I/O
 			initDocIO(doc, parentMessageProxy, function loadCallback() {
 				updatePaddingBottom();
